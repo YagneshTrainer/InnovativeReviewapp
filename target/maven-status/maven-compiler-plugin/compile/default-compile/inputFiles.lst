@@ -1,0 +1,15 @@
+/root/ReviewApp/src/main/java/com/innovative/ReviewAppApplication.java
+/root/ReviewApp/src/main/java/com/innovative/controller/AuthController.java
+/root/ReviewApp/src/main/java/com/innovative/controller/ReviewController.java
+/root/ReviewApp/src/main/java/com/innovative/entity/Comment.java
+/root/ReviewApp/src/main/java/com/innovative/entity/Review.java
+/root/ReviewApp/src/main/java/com/innovative/entity/ReviewLike.java
+/root/ReviewApp/src/main/java/com/innovative/entity/User.java
+/root/ReviewApp/src/main/java/com/innovative/repository/CommentRepository.java
+/root/ReviewApp/src/main/java/com/innovative/repository/ReviewLikeRepository.java
+/root/ReviewApp/src/main/java/com/innovative/repository/ReviewRepository.java
+/root/ReviewApp/src/main/java/com/innovative/repository/UserRepository.java
+/root/ReviewApp/src/main/java/com/innovative/security/SecurityConfig.java
+/root/ReviewApp/src/main/java/com/innovative/service/CustomUserDetailsService.java
+/root/ReviewApp/src/main/java/com/innovative/service/UserService.java
+/root/ReviewApp/src/main/java/com/innovative/service/UserServiceImpl.java
