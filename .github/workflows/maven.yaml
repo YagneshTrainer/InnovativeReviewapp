@@ -37,6 +37,11 @@ jobs:
         IMAGE_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}:latest
         docker build -t $IMAGE_URI .
         docker push $IMAGE_URI
+    
+    - name: Update task definition with new image
+      run: |
+        IMAGE_URI=${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}:latest
+        sed -i "s|<IMAGE_URI>|$IMAGE_URI|g" ecs-task-def.json
 
     - name: Deploy to ECS
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
